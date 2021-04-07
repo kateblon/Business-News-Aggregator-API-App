@@ -70,7 +70,12 @@
             const description = story.description;
 
             out += "<li onclick='populateDetail(" + number + ")'class='wrap'>";
-            out 
+            out += "<a href='#detail'>";
+            out += "<img src='" + image + "'/>";
+            out += "<strong>" + title + "</strong>";
+            out += "<br/>" + storyTime + " | " + source;
+            out += "<p class='wrap'>" + description + "</p>"
+            out += "</a></li>";    
 
 
         }
