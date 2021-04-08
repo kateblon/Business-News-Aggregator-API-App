@@ -79,6 +79,16 @@
 
 
         }
+
+        function populateDetail(storyNum) {
+            const story = articles[storyNum];
+            console.log(story);
+            $('#detTitle').html("<h1>" + story.title + "</h1>");
+            $('#detInfo').html(story.name + " | " + story.publishedAt);
+            $('#detImg').html("<img src='" + story.urlToImage + "'/>");
+            $('#detStory').html("<p>" + story.content + "</p>");
+            $('#fullStoryLink').html("<a href='" + story.url + "'>FullStory</a>");
+        }
     </script>
 </body>
 </html>
